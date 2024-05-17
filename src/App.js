@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Top from "./elements/Top/Top";
 import Middle from "./elements/Middle/Middle";
@@ -10,6 +10,16 @@ function App() {
   const toggleButton=()=>{
       setActive(!active)
   }
+
+  useEffect(() => {
+    if (active){
+      document.body.style.background = "hsl(230, 17%, 14%)"
+    }
+    else{
+      document.body.style.background = "white"
+    }
+  }, [active])
+  
 
 
   return (

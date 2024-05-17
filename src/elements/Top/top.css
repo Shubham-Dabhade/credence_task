@@ -41,7 +41,7 @@
     align-items: center;
     justify-self: center;
     flex-direction: row;
-    width: 17%;
+    width: max-content;
 }
 .top-right-container-toggle-text{
     font-size: 14px;
@@ -65,6 +65,7 @@
     justify-content: flex-end;
     background: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     cursor:pointer;
+    margin-left: 12px;
 }
 
 .top-right-container-toggle-button-circle{
