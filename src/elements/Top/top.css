@@ -28,6 +28,9 @@
     font-weight: 700;
     color: hsl(228, 12%, 44%);
 }
+.dark-top-left-container-followers-count{
+    color:hsl(228, 34%, 66%);
+}
 
 /* .top-left-container-followers-count{
     font-size: 14px;
