@@ -19,7 +19,7 @@ const Top = ({toggleButton,active}) => {
                 <div className={`top-right-container-toggle-text ${active?"text_color_top":""}`}>
                     Dark Mode
                 </div>
-                <div className="top-right-container-toggle-button" onClick={toggleButton}>
+                <div className={`top-right-container-toggle-button ${active?"toggle-background-active":""}`} onClick={toggleButton}>
                     <div className={`top-right-container-toggle-button-circle ${active?"toggle-active":""} `}>
 
                     </div>

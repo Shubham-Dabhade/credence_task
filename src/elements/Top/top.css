@@ -66,9 +66,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    background: hsla(229, 12%, 44%, 0.474);
     cursor:pointer;
     margin-left: 12px;
+}
+.toggle-background-active{
+    background: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
 }
 
 .top-right-container-toggle-button-circle{
