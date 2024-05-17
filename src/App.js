@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Top from "./elements/Top/Top";
+import Middle from "./elements/Middle/Middle";
+import Bottom from "./elements/Bottom/Bottom";
 
 function App() {
+  const [active,setActive] = useState(false)
+
+  const toggleButton=()=>{
+      setActive(!active)
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${active?"dark":""}`}>
+      <div className={`top-background-container ${active?"dark-top-background-container":""}`}></div>
+      <div className="inside-app-container">
+        <Top toggleButton={toggleButton} active={active}/>
+        <Middle active={active}/>
+        <Bottom active={active}/>
+      </div>
     </div>
   );
 }

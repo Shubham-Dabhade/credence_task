@@ -1,0 +1,108 @@
+.Top{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.inside-top-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.top-left-container{
+    height: 100%;
+    width: 100%;
+}
+
+.top-left-container-title{
+    font-weight: 700;
+    font-size: clamp(0.54rem,0.911rem + 1.1vw, 2.6rem);
+    margin-bottom: 5px;
+}
+.top-left-container-followers-count{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+.top-left-container-followers-count{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(228, 34%, 66%);
+}
+
+/* top-right container */
+.top-right-container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: row;
+    width: 17%;
+}
+.top-right-container-toggle-text{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+    width: max-content;
+    flex: 3.5;
+}
+.text_color_top{
+    color: white;
+}
+
+.top-right-container-toggle-button{
+    content: "";
+    height: 25px;
+    border-radius: 20px;
+    padding: 0px 3px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    cursor:pointer;
+}
+
+.top-right-container-toggle-button-circle{
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    transform: translateX(0px);
+    transition: all 0.1s ease-in-out;
+}
+.toggle-active{
+    transform: translateX(-110%);
+    background: hsla(232, 19%, 15%, 0.866);
+}
+
+@media screen and (max-width:1000px) {
+    .top-right-container{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .inside-top-container{
+        flex-direction: column;
+    }
+    .top-left-container{
+        margin-bottom: 15px;
+    }
+    .top-right-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 0px;
+        border-top: 1px solid hsla(229, 12%, 44%, 0.305);
+    }
+    .top-left-container-title{
+        font-size: 25px;
+    }
+}
